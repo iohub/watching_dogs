@@ -43,8 +43,8 @@ def get_district_price(baseurl):
     return result
 
 
-# baseurl = 'https://gy.ke.com/ershoufang/pg%dsf1a4a5/'
-baseurl = 'https://sz.ke.com/ershoufang/pg%dsf1a3a4a5/'
+baseurl = 'https://gy.ke.com/ershoufang/pg%dsf1a4a5/'
+# baseurl = 'https://sz.ke.com/ershoufang/pg%dsf1a3a4a5/'
 
 
 if __name__ == '__main__':
@@ -58,8 +58,8 @@ if __name__ == '__main__':
     statics['total'] = total
     line = json.dumps(statics)
     prices = {}
-    with open('data/sz-prices.json', 'r') as fobj:
+    with open('data/gy-prices.json', 'r') as fobj:
         prices = json.load(fobj)
     prices[str(date.today())] = statics
-    with open('data/sz-prices.json', 'w') as fobj:
+    with open('data/gy-prices.json', 'w') as fobj:
         fobj.write(json.dumps(prices))

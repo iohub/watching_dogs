@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <style>
     .highcharts-figure, .highcharts-data-table table {
-      min-width: 360px;
-      max-width: 800px;
+      min-width: 600px;
+      max-width: 1080px;
       margin: 1em auto;
     }
     .highcharts-data-table table {
